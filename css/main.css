@@ -36,10 +36,14 @@ header nav ul li{
 }
 
 .hero{
-    background: url('../images/hero-background.jpg')no-repeat center center/cover;
-    padding: 4rem 0;
-    color: #ffffff;
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
+    padding: 2rem;
+    color: #fff;
     text-align: center;
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
 }
 
 .hero h1{
@@ -61,7 +65,8 @@ header nav ul li{
     transition: (0.3s) ease;
 }
 .button:hover,.button:focus{
-    background-color: #966f2c;
+    background-color: #d69e3d;
+    color: #fff;
 }
 main{
     padding: 2rem 1rem;
@@ -96,7 +101,33 @@ main{
     width: 50px;
     margin-bottom: 1rem;
 }
+.cta, .locations{
+    background: url('../images/coffee-beans.jpeg') no-repeat center center/cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #fff;
 
+
+}
+.cta-content, .locations-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    width: 100%;
+}
+.cta:before, .locations:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 .about,.cta, .locations{
     background-color: #000;
     color: white;
