@@ -1,0 +1,156 @@
+nav {
+    background-color: black;
+    color: #ffffff;
+    
+}
+
+body{
+    font-family: 'karla',sans-serif;
+    background-color: #f3f0e9;
+    color: #000;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #000;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    font-family: 'Lato',sans-serif;
+    font-size: 1.5rem;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    margin: 0 1rem;
+}
+
+.hero{
+    background: url('../images/hero-background.jpg')no-repeat center center/cover;
+    padding: 4rem 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    background-color: black;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: (0.3s) ease;
+}
+.button:hover,.button:focus{
+    background-color: #966f2c;
+}
+main{
+    padding: 2rem 1rem;
+}
+
+.intro, .features, .cta, .locations, .about, .testimony{
+    margin-bottom:  2rem; 
+}
+.intro h2, .features h2, .cta h2, .locations h2, .about h2, .testimony h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato',sans-serif;
+} 
+.intro img, .gallery img, .testimony img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.features{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.feature{
+    flex: 1,1,30%;
+    margin: 1rem 0;
+    text-align: center;
+
+}
+.feature img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.about,.cta, .locations{
+    background-color: #000;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.testimony{
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+}
+.testimony{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.testimony img{
+    
+    margin-right: 1rem;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Lato',sans-serif;
+}
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 2.986rem;
+    }
+    
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+@media (min-width: 1100px) {
+    .hero h1 {
+        font-size: 3.815rem;
+    }
+    
+    .hero p {
+        font-size: 1.8rem;
+    }
+
+    .features {
+        justify-content: space-around;
+    }
+
+    .feature {
+        flex: 1 1 30%;
+    }
+}
